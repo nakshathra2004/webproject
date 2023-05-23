@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,400;0,900;1,700&display=swap');
+
+body {
+    background-color: white;
+    padding: 0%;
+    margin: 0%;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+/*Navbar*/
+header {
+    font-weight: bold;
+    background-color: darkgreen;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    padding: 10px 0;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header ul {
+    margin: 0;
+    padding: 0;
+}
+
+header li {
+    display: inline;
+
+    margin-top: 10px;
+    /* sets the margin for the top side to 10 pixels */
+    margin-right: 10px;
+    /* sets the margin for the right side to 10 pixels */
+    margin-bottom: 10px;
+    /* sets the margin for the bottom side to 10 pixels */
+    margin-left: 10px;
+    /* sets the margin for the left side to 10 pixels */
+
+    font-weight: bold;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: gold;
+}
+
+#caption {
+    float: left;
+}
+
+#caption h1 {
+    margin: 0;
+}
+
+header h1 .logo.gold {
+    color: gold;
+}
+
+/*Hero section*/
+#hero {
+    min-height: 500px;
+    background-image: url("https://img.freepik.com/premium-photo/green-velvet-fabric-texture-used-as-background-empty-green-fabric-background-soft-smooth-textile-material-there-is-space-text_661047-3049.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+#hero h4 {
+    color: white;
+    font-size: 25px;
+    margin-top: 160px;
+    margin-bottom: 0%;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 75px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: gold;
+    font-family: 'Dancing Script', cursive;
+}
+
+#hero button {
+    font-size: 19px;
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-weight: bold;
+    border: 1px solid black;
+    color: green;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+}
+
+#hero button:hover {
+    background-color: green;
+    color: white;
+    border: 1px solid gold;
+}
+
+#seperate {
+    padding: 5px;
+    background-color: green;
+}
+
+#about {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    padding-left: 0;
+    padding-right: 0;
+    background-color: white;
+}
+
+#about h2 {
+    font-family: 'Roboto', sans-serif;
+    color: green;
+}
+
+.about-box1 {
+    width: 20%;
+    float: left;
+    padding: 10px;
+}
+
+.about-box1.img {
+    display: block;
+    padding: auto;
+}
+
+.about-box2 {
+    width: 60%;
+    float: right;
+    padding: 10px;
+    text-align: justify;
+}
+
+#about button {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: white;
+    border: 1px solid green;
+    color: green;
+    padding: 8px 20px;
+}
+
+#about button:hover {
+    background-color: green;
+    color: white;
+    border: 1px solid white;
+}
+
+/*skills*/
+#skills {
+    background-color: lightgreen;
+    padding: 70px 0;
+}
+
+.box {
+    width: 31%;
+    float: left;
+    text-align: center;
+    padding: 10px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 2px;
+    height: 300px;
+    margin: 1rem;
+    width: 300px;
+}
+
+.card-1 {
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .12), 0 1px 2px rgba(0, 0, 0, .24);
+    transition: all .3s cubic-bezier(.25, .8, .25, 1);
+}
+
+.card-1:hover {
+    box-shadow: 0 14px 28px rgba(0, 0, 0, .25), 0 10px 10px rgba(0, 0, 0, .22);
+}
+
+#skills h2{
+    color: green;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#skills h3{
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: 'Dancing Script', cursive
+}
+
+#skills p{
+    font-size: 14px;
+    color: grey;
+    padding: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#forms h2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    color: green;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+#forms{
+    margin: 5% 25%;
+    padding: 70px;
+    background-color: white;
+    text-align: center;
+}
+
+#forms.formgroup{ font: bold 20px green; }
+
+input{
+    width: 250px;
+    padding: 5px;
+    margin: 2px 0;
+}
+
+#forms .button{
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    border: 1px solid green;
+}
+
+#forms .button:hover{
+    color: green;
+    background-color: white;
+}
+
+/*Navbar*/
+footer {
+    background-color: darkgreen;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
