@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png"
         href="https://cdn.dribbble.com/users/2431810/screenshots/7011931/logopres1_4x.jpg">
     <link rel="stylesheet" href="style.css">
+    <script src="validation.js"></script>
 </head>
 
 <body>
@@ -54,8 +55,10 @@
             <div class="about-box2">
                 <h2><u>About me</u></h2>
                 <p> First-year CSE student at Government College of Engineering, Kannur. I completed my higher
-                    secondary education at Devamatha CMI Public School, Thrissur, with 90%, in 2022 and secondary education from
-                    Kendriya Vidyalaya AFS Sulur,Coimbatore, with 97%, in 2020. I'm also pursuing a BS online degree from IIT Madras in
+                    secondary education at Devamatha CMI Public School, Thrissur, with 90%, in 2022 and secondary
+                    education from
+                    Kendriya Vidyalaya AFS Sulur,Coimbatore, with 97%, in 2020. I'm also pursuing a BS online degree
+                    from IIT Madras in
                     Data Science and Programming.</p>
                 <button>Download CV</button>
             </div>
@@ -93,23 +96,28 @@
         <section id="forms">
             <div class="container">
                 <h2><u>Let's connect</u></h2>
-                <div style="font: bold 20px green;">
-                    <label for="Name:">Name:</label>
-                    <input type="text">
-                </div>
-                <div style="font: bold 20px green;">
-                    <label for="Email:">Email:</label>
-                    <input type="email">
-                </div>
-                <div style="font: bold 20px green;">
-                    <label for="Message:">Message:</label>
-                    <textarea cols="42" rows="5" tabindex="4"></textarea>
-                </div>
-                <div style="font: bold 20px green;">
-                    <input class="button" type="submit">
-                </div>
+                <form onsubmit="return validateForm()">
+                    <div class="formgroup">
+                        <label for="Name:">Name:</label>
+                        <input type="text" id="name" name="name" required title="Please enter your name">
+                    </div>
+                    <div class="formgroup">
+                        <label for="Email:">Email:</label>
+                        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                            required title="Please enter a valid email address">
+                    </div>
+                    <div class="formgroup">
+                        <label for="Message:">Message:</label>
+                        <textarea id="message" name="message" cols="42" rows="5" tabindex="4" required
+                            title="Please enter your message"></textarea>
+                    </div>
+                    <div class="formgroup">
+                        <input class="button" type="submit" value="Submit">
+                    </div>
+                </form>
             </div>
         </section>
+
         <br>
     </section>
     <!--end of contact section-->
@@ -120,6 +128,7 @@
         </div>
     </footer>
     <!--end of footer section-->
+
 </body>
 
 </html>
